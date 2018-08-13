@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Tabela de Gerenciamento de Clientes</h2>
+
+
+<table style="width:100%">
+<table id="tabelaspec">
+  <caption></caption>
+  <table width="700">
+    <table border="1">
+    <table border: 1px solid #606060;>
+    <th width="150" class="di">Data</th>
+    <th width="550" class="di">Cliente</th>
+    <th class="di">Valor</th>
+  </tr>
+
+   {% for item in dados %}
+   
+   <tr>
+    <td>{{ item.data }}</td>
+    <td>{{ item.cliente }}</td>
+    <td>{{ item.valor }}</td>
+  </tr>
+    <tr>
+      <td colspan="2">{{ item.total }}</td>
+      
+      {% endfor %}
+
+</table>
+
+</body>
+
+</html>
